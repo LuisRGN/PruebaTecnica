@@ -3,7 +3,7 @@
 
 ## Descripción del Proyecto
 
-Este proyecto es una aplicación web que se despliega en Vercel y permite un brebe encuesta. 
+Este proyecto es una aplicación web que se despliega en Vercel y permite un breve encuesta. 
 
 ### Enfoque para la Maquetación
 
