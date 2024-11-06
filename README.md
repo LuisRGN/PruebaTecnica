@@ -3,11 +3,11 @@
 
 ## Descripción del Proyecto
 
-Este proyecto es una aplicación web que se despliega en [nombre de la plataforma de despliegue, si aplicable] y permite [breve descripción de lo que hace tu proyecto, como la gestión de personajes, un sistema de búsqueda, etc.]. 
+Este proyecto es una aplicación web que se despliega en Vercel y permite un brebe encuesta. 
 
 ### Enfoque para la Maquetación
 
-Para la maquetación, he utilizado **[tecnologías y frameworks que usaste para maquetar, como Bootstrap, TailwindCSS, etc.]**. Esta elección permitió asegurar que la aplicación fuera completamente **responsiva**, adaptándose bien a diferentes tamaños de pantalla y proporcionando una experiencia de usuario fluida y rápida.
+Para la maquetación, he utilizado **React-ts + Vite, styled-components, React-icons, Redux y React-Redux**. Esta elección permitió asegurar que la aplicación fuera completamente **responsiva**, adaptándose bien a diferentes tamaños de pantalla y proporcionando una experiencia de usuario fluida y rápida.
 
 He seguido las mejores prácticas de desarrollo frontend, como el uso de componentes reutilizables y un diseño modular, con el objetivo de lograr una alta mantenibilidad y escalabilidad.
 
