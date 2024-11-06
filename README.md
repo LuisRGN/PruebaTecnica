@@ -27,7 +27,7 @@ Para ejecutar el proyecto localmente:
 4. **Inicia el servidor de desarrollo:**
    ```bash
    npm run dev
-Esto lanzará el proyecto en http://localhost:5173 (o el puerto que hayas configurado).
+Esto lanzará el proyecto en http://localhost:3000 (o el puerto que hayas configurado).
 
 
 
