@@ -29,7 +29,7 @@ const Pagina1: React.FC<PageProps> = ({ currentStep, setCurrentStep, totalSteps 
     return (
         <Styles.ContainerPage1>
             <Styles.LogoMobile >
-                <img src="/svgMobile.svg" alt="" />
+                <Styles.ImgSvg src="https://res.cloudinary.com/dtoditltb/image/upload/v1730930423/Imagen_de_WhatsApp_2024-11-06_a_las_16.57.43_fea909a1.png" alt="" />
             </Styles.LogoMobile>
             <Styles.ContainerDesktop>
                 <Styles.Container>
@@ -62,8 +62,8 @@ const Pagina1: React.FC<PageProps> = ({ currentStep, setCurrentStep, totalSteps 
                     </Styles.NameInput>
                 </Styles.Container>
                 <Styles.StyledSvg>
-                    <Styles.BackgroundSvg isPageSix={false}>
-                        <img src="/svg.svg" alt="" />
+                    <Styles.BackgroundSvg>
+                        <Styles.Desktop src="https://res.cloudinary.com/dtoditltb/image/upload/v1730953452/Imagen_de_WhatsApp_2024-11-06_a_las_23.18.06_7448ee1a_ztdgng.png" alt="" />
                     </Styles.BackgroundSvg>
                 </Styles.StyledSvg>
             </Styles.ContainerDesktop>

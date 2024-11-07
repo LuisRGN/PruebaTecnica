@@ -22,14 +22,17 @@ export const SelectButtons2 = styled.button<{ isSelected: boolean }>`
     display: grid;
     grid-template-columns: 20% 80%;
    
-    &:hover{
+    @media (min-width: 768px) {
+      &:hover {
         background-color: #231331;
         transform: scale(1.04);
         border: none;
         color: white;
     }
+    }
     @media (max-width: 768px) {
         width: 100%;
         grid-template-columns: 15% 80%;
+        
     }
 `;

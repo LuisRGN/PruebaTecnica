@@ -12,23 +12,19 @@ export const ContainerPage1 = styled.div`
   height: 100vh;
 }
 `;
-
 export const StyledSvg = styled.div`
-  @media (max-width: 768px) {
+  @media (max-width: 760px) {
     display: none;
   }
 `;
-export const BackgroundSvg = styled.div<{ isPageSix: boolean }>`
-    border-radius: 10rem 0 0 10rem;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    align-items: end;
-    justify-content: center;
-    background: ${(props) =>
-    props.isPageSix
-      ? 'none' // Si es la página 6, no hay fondo
-      : 'linear-gradient(283.73deg, #231331 -29.4%, #00CCBC 50.02%)'};
+
+export const BackgroundSvg = styled.div`
+border-radius: 10rem 0 0 10rem;
+width: 100%;
+height: 100%;
+display: flex;
+align-items: end;
+justify-content: center;
 `;
 
 export const LogoMobile = styled.div`
@@ -38,7 +34,12 @@ export const LogoMobile = styled.div`
     display: none;
   }
 `;
-
+export const ImgSvg = styled.img`
+  width: 80%;
+  @media (min-width: 768px) {
+    display: none;
+  }
+`;
 export const Paragraph = styled.p`
     font-size: 1.3rem;
     color: #231331;
@@ -115,12 +116,14 @@ export const SelectButtons = styled.button<{ isSelected: boolean }>`
     margin: 0.1rem;
     cursor: pointer;
     transition: all 0.5s ease-in-out;
-
-    &:hover {
+    
+    @media (min-width: 768px) {
+      &:hover {
         background-color: #231331;
         transform: scale(1.04);
         border: none;
         color: white;
+    }
     }
     @media (max-width: 768px) {
       width: 49%;
@@ -161,3 +164,13 @@ export const TotalPageStyle = styled.span`
 export const LinePageStyle = styled.span`
     font-size: 24px;
 `;
+
+export const Desktop = styled.img`
+     width: 100%;
+    height: 100%;
+`;
+
+export const DesktopNoBackground = styled.img`
+width: 80%;
+height: 85%;
+`

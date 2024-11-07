@@ -8,7 +8,7 @@ const Page6: React.FC<PageProps> = ({ currentStep, totalSteps }) => {
         <section>
             <Styles.ContainerPageFinish>
                 <Styles.LogoMobile >
-                    <img src="/svgMobile.svg" alt="" />
+                <Styles.ImgSvg src="https://res.cloudinary.com/dtoditltb/image/upload/v1730930423/Imagen_de_WhatsApp_2024-11-06_a_las_16.57.43_fea909a1.png" alt="" />
                 </Styles.LogoMobile>
                 <Styles.ContainerDesktop>
                     <Styles.Container>
@@ -31,8 +31,8 @@ const Page6: React.FC<PageProps> = ({ currentStep, totalSteps }) => {
                         </section>
                     </Styles.Container>
                     <Styles.StyledSvg>
-                        <Styles.BackgroundSvg isPageSix={currentStep === 6}>
-                            <img src="/svg.svg" alt="" />
+                        <Styles.BackgroundSvg>
+                            <Styles.DesktopNoBackground src="https://res.cloudinary.com/dtoditltb/image/upload/v1730952132/Imagen_de_WhatsApp_2024-11-06_a_las_22.49.48_a7f80ead_1_uxfaa9.png" alt="" />
                         </Styles.BackgroundSvg>
                     </Styles.StyledSvg>
                 </Styles.ContainerDesktop>

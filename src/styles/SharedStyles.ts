@@ -16,7 +16,10 @@ import {
     ProgressContainer,
     ProgressBar,
     ContainerPageFinish,
-    BackgroundSvg
+    BackgroundSvg,
+    ImgSvg,
+    Desktop,
+    DesktopNoBackground
 } from "./App.styles";
 import {
     PreviusNext,
@@ -51,5 +54,8 @@ export {
     StyledLetter,
     SelectButtons2,
     ContainerPageFinish,
-    BackgroundSvg
+    BackgroundSvg,
+    ImgSvg,
+    Desktop,
+    DesktopNoBackground
 };
