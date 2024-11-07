@@ -1,4 +1,4 @@
-import React, { useState/* , useEffect  */} from 'react';
+import React, { useState } from 'react';
 import Pagina1 from './components/Page1';
 import Page2 from './components/Page2';
 import Page3 from './components/Page3';
@@ -33,8 +33,7 @@ const App: React.FC = () => {
   return (
     <div>
       <ProgressBar currentStep={currentStep} totalSteps={totalSteps} />
-      <div
-      >
+      <div>
         {renderPage()}
       </div>
     </div>

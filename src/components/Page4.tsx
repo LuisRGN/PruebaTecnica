@@ -6,6 +6,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import { setPositionFour } from '../redux/slice';
 import { useState, useEffect } from "react";
 import { AppDispatch } from "../redux/store";
+import { fourthOptions } from "../constants/options";
 
 
 const Page4: React.FC<PageProps> = ({ currentStep, setCurrentStep, totalSteps }) => {
@@ -36,17 +37,7 @@ const Page4: React.FC<PageProps> = ({ currentStep, setCurrentStep, totalSteps })
             setCurrentStep(currentStep - 1);
         }
     }
-    const options = [
-        "SAP",
-        "Microsoft Dynamics",
-        "Saleforce",
-        "Hubspot",
-        "Zoho",
-        "Netsuite (Oracle)",
-        "Monday",
-        "CRM Propio",
-        "No tengo CRM"
-    ]
+
     return (
         <section>
             <Styles.ContainerPage1>
@@ -66,7 +57,7 @@ const Page4: React.FC<PageProps> = ({ currentStep, setCurrentStep, totalSteps })
                             CRM:
                         </Styles.Paragraph>
                         <Styles.Options>
-                            {options.map((option, index) => (
+                            {fourthOptions.map((option, index) => (
                                 <Styles.SelectButtons
                                     key={index}
                                     onClick={() => handlePositionSelect(option)}

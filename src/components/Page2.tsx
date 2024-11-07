@@ -6,6 +6,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import { setPositionSecond } from '../redux/slice';
 import { useState, useEffect } from "react";
 import { AppDispatch } from "../redux/store";
+import { secondOptions } from "../constants/options";
 
 
 const Page2: React.FC<PageProps> = ({ currentStep, setCurrentStep, totalSteps }) => {
@@ -38,17 +39,6 @@ const Page2: React.FC<PageProps> = ({ currentStep, setCurrentStep, totalSteps })
         }
     }
 
-    const options = [
-        "Board member",
-        "C-level",
-        "Gerente",
-        "Subgerente",
-        "Jefe área",
-        "Líder de área",
-        "Ejecutivo / Analista",
-        "Otro"
-    ];
-
     return (
         <section>
             <Styles.ContainerPage1>
@@ -70,7 +60,7 @@ const Page2: React.FC<PageProps> = ({ currentStep, setCurrentStep, totalSteps })
                             ¿Cuál es tu cargo/posición dentro de tu empresa?
                         </Styles.Paragraph>
                         <Styles.Options>
-                            {options.map((option, index) => (
+                            {secondOptions.map((option, index) => (
                                 <Styles.SelectButtons
                                     key={index}
                                     onClick={() => handlePositionSelect(option)}

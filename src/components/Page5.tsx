@@ -6,6 +6,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import { setPositionFive } from '../redux/slice';
 import { useState, useEffect } from "react";
 import { AppDispatch } from "../redux/store";
+import { fifthOptions } from "../constants/options";
 
 
 const Page5: React.FC<PageProps> = ({ currentStep, setCurrentStep, totalSteps }) => {
@@ -36,19 +37,7 @@ const Page5: React.FC<PageProps> = ({ currentStep, setCurrentStep, totalSteps })
             setCurrentStep(currentStep - 1);
         }
     }
-    const options = [
-        "Tecnología",
-        "Software",
-        "Servicios",
-        "Financieria",
-        "Telecomunicaciones",
-        "Producción/Fabrición",
-        "Logística",
-        "Consumo Masivo",
-        "Mayorista",
-        "Retail",
-        "Otra"
-    ]
+    
     return (
         <section>
             <Styles.ContainerPage1>
@@ -68,7 +57,7 @@ const Page5: React.FC<PageProps> = ({ currentStep, setCurrentStep, totalSteps })
                             ¿A cuál industria pertenece tu empresa?
                         </Styles.Paragraph>
                         <Styles.Options>
-                            {options.map((option, index) => (
+                            {fifthOptions.map((option, index) => (
                                 <Styles.SelectButtons
                                     key={index}
                                     onClick={() => handlePositionSelect(option)}

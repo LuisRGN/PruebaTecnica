@@ -6,6 +6,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import { setPositionThree } from '../redux/slice';
 import { useState, useEffect } from "react";
 import { AppDispatch } from "../redux/store";
+import { thirdOptions, letters } from "../constants/options";
 
 
 const Page3: React.FC<PageProps> = ({ currentStep, setCurrentStep, totalSteps }) => {
@@ -36,18 +37,6 @@ const Page3: React.FC<PageProps> = ({ currentStep, setCurrentStep, totalSteps })
             setCurrentStep(currentStep - 1);
         }
     }
-    const options = [
-        "Aumentar conversión de leads a clientes",
-        "Reducir customer churn",
-        "Implementar un programa VoC",
-        "Reducir costos en gestión de reclamos",
-        "Optimizar procesos comerciales",
-        "Optimizar procesos operativos",
-        "Otro"
-    ]
-    const letters = [
-        "A", "B", "C", "D", "E", "F", "G"
-    ]
 
     return (
         <section>
@@ -65,7 +54,7 @@ const Page3: React.FC<PageProps> = ({ currentStep, setCurrentStep, totalSteps })
                             ¿Cuáles son tus principales desafíos para 2024?
                         </Styles.Paragraph>
                         <Styles.Options>
-                            {options.map((option, index) => (
+                            {thirdOptions.map((option, index) => (
                                 <Styles.SelectButtons2
                                     key={index}
                                     onClick={() => handlePositionSelect(option)}
